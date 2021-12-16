@@ -1,0 +1,116 @@
+h1.heading {
+    font-size: 60px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+p.heading.p__color {
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.galerie {
+    background: #47555E;
+}
+img.project__img {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    transition: .4s;
+    opacity: .7;
+    position: relative;
+}
+img.project__img::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: 1;
+    opacity: 1;
+}
+.mask__effect {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #dfd7c4;
+    border-radius: 10px;
+    transition: .4s;
+    opacity: .3;
+    display: none;
+}
+.project__box:hover .mask__effect {
+    display: inline;
+    transform: scale(1.1);
+}
+.project__box:hover img.project__img {
+    transform: scale(1.1);
+}
+.project__meta.absolute {
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}   
+h5.project__text {
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+h4.project__text {
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+a.project__btn {
+    padding: 12px 35px;
+    border: 1px solid #ffffff87;
+    background-color: #ffffff87;
+    border-radius: 5px;
+    transition: .4s ease;
+}
+a.project__btn:hover{
+    background-color: #47555E;
+    border: 2px solid #47555E;
+    color: #fff;
+}
+.button.btn {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid #47555E;
+    background-color: #47555E;
+    color: #fff!important;
+    letter-spacing: 2px;
+    transition: .4s all ease;
+}
+.button.view__more__btn:hover{
+    background-color: #fff;
+    border: 2px solid #47555E;
+    color: #fff!important;
+}
+.contact__btn {
+    background-color: #ffff;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 1024px){
+h5.project__text {
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+h4.project__text {
+    font-size: 18px;
+}
+}
+
